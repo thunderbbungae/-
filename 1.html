@@ -26,6 +26,12 @@
    margin:0;
    padding:20px;
   }
+  .cloudsearch_suggestion_container {
+      font-size: 14px;
+    }
+  #suggestions_anchor .cloudsearch_suggestion_container {
+      font-size: 14px;
+    }
  </style>
   <!-- Google API loader -->
     <script src="https://apis.google.com/js/api.js?mods=enable_cloud_search_widget&onload=onLoad" async defer></script>
@@ -60,6 +66,18 @@
    컴퓨터, 게임소개, 강의들과
   같은것들 말입니다.</h3>
 <img  src="bbungae.PNG">
+ <div>
+      <span>Source</span>
+      <select id="sources">
+        <option value="ALL">All</option>
+        <option value="GOOGLE_GMAIL">Gmail</option>
+        <option value="GOOGLE_DRIVE">Drive</option>
+        <option value="GOOGLE_SITES">Sites</option>
+        <option value="GOOGLE_GROUPS">Groups</option>
+        <option value="GOOGLE_CALENDAR">Calendar</option>
+        <option value="GOOGLE_KEEP">Keep</option>
+      </select>
+    </div>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
