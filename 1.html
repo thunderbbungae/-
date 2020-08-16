@@ -36,6 +36,20 @@
    display:grid;
    grid-template-columns:150px 1fr;
   }
+  #grid #article{
+   padding-left:25px;
+  }
+  @media(max-width:800px){
+   #grid{
+    display:block;
+   }
+   ol{
+    border-right:none;
+   }
+   h1{
+    border-bottom:none;
+   }
+  }
  </style>
   <!-- Google API loader -->
     <script src="https://apis.google.com/js/api.js?mods=enable_cloud_search_widget&onload=onLoad" async defer></script>
