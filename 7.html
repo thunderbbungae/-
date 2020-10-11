@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+ <head>
+ <title>번개닷컴</title>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="style.css">
+
+  <!-- Google API loader -->
+    <script src="https://apis.google.com/js/api.js?mods=enable_cloud_search_widget&onload=onLoad" async defer></script>
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173561272-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-173561272-1');
+</script>
+         <link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>register(회원가입)</h2>
+        <p>Please fill this form to create an account</p>
+        <form action=""method="post">
+          <div class="form-group">
+            <label>Full name(전체이름)</label>
+            <input type="text" name="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address(이메일주소)</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Password(비밀번호)</label>
+            <input type="password" name="password" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Confirm Password(비밀번호 재입력)</label>
+            <input type="password" name="confirm_password" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <input type="submit" name="submit" class="btn btn-primary" value="Submit"
+          </div>
+          <p>Already have an account?(이미 계정을 가지고 계신가요?) <a href="login.php">Login here 여기서 로그인하세요</a>.</p>
+        </form>
+       </div>
+      </div>
+     </div>
+    </body>
+  </html>
